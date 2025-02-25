@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  width: 400vw;
+  height: 100vh;
+  animation: slide 8s infinite alternate ease-in-out;
+}
+.slider img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+@keyframes slide {
+  0%,
+  12.5% {
+    transform: translateX(0);
+  }
+  25%,
+  37.5% {
+    transform: translateX(-100vw);
+  }
+  50%,
+  62.5% {
+    transform: translateX(-200vw);
+  }
+  75%,
+  87.5% {
+    transform: translateX(-300vw);
+  }
+  100% {
+    transform: translateX(-300vw);
+  }
+}
