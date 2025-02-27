@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../assets/images/case%206/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: absolute;
+}
+
+.cars {
+  position: absolute;
+  top: 50vh;
+  left: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.car {
+  width: 600px;
+  height: 300px;
+  position: relative;
+}
+
+.city {
+  display: flex;
+  position: absolute;
+  top: 26vh;
+  width: 400%;
+  animation: moveCity 10s linear infinite;
+}
+
+.city img {
+  width: 100vw;
+  height: auto;
+}
+
+.wheel {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 150px;
+  animation: rotateWheels 10s linear infinite;
+}
+
+.backWheel {
+  left: 45px;
+}
+
+.frontWheel {
+  right: 65px;
+}
+
+.road {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 59vh;
+  animation: moveRoad 10s linear infinite, forwards;
+}
+
+.roadMove {
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+@keyframes moveCity {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-20vw);
+  }
+  20% {
+    transform: translateX(-40vw);
+  }
+  40% {
+    transform: translateX(-55vw);
+  }
+  70% {
+    transform: translateX(-65vw);
+  }
+  85% {
+    transform: translateX(-70vw);
+  }
+  100% {
+    transform: translateX(-75vw);
+  }
+}
+
+@keyframes moveRoad {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-20vw);
+  }
+  20% {
+    transform: translateX(-40vw);
+  }
+  40% {
+    transform: translateX(-55vw);
+  }
+  70% {
+    transform: translateX(-65vw);
+  }
+  85% {
+    transform: translateX(-70vw);
+  }
+  100% {
+    transform: translateX(-75vw);
+  }
+}
+
+@keyframes rotateWheels {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  20% {
+    transform: rotate(270deg);
+  }
+  40% {
+    transform: rotate(200deg);
+  }
+  70% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
